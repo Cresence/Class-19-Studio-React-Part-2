@@ -1,7 +1,7 @@
 const RecipeAuthor = () => {
-   let authorLink = "";
-   let authorPhoto = "";
-   let authorName = "";
+   let authorLink = "https://thecozycook.com/stovetop-mac-and-cheese/";
+   let authorPhoto = "https://thecozycook.com/wp-content/uploads/2021/11/The-Cozy-Cook.jpg";
+   let authorName = "Stephanie Melchione";
 
    return (
       <div>
