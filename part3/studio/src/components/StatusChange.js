@@ -13,9 +13,10 @@ export default function StatusChange () {
    const handleSubmit = (event) => {
       event.preventDefault();
       setStatus(true);
+      console.log(notes);
    }
 
-   return (recipeStatus &&
+   return (!recipeStatus &&
       <div style={{paddingTop: "50px"}}>
          <form onSubmit={handleSubmit}>
             <label>Have you tried this recipe? Add your notes here: <input type="text" value={notes} onChange={handleChange} />
