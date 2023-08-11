@@ -1,12 +1,13 @@
 import { useState } from 'react';
 
 export default function BoardAssignment () {
+   const [boardName, setName] = useState("no boards yet!");
+
    const boards = [{
       label: "Board of Taste", value: "bot1"
    }, {label: "Board of Texture", value: "bot2"}, {label: "Board of Portrayal", value: "bot3"}];
 
    const handleChange = (event) => {
-      const [boardName, setName] = useState("no boards yet!");
       setName(event.target.value);
    }
 

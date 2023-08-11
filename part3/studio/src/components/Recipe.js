@@ -1,3 +1,5 @@
+const styleImg = {height: "205px", width: "250px"};
+
 const RecipeAuthor = () => {
    let authorLink = "https://thecozycook.com/stovetop-mac-and-cheese/";
    let authorPhoto = "https://thecozycook.com/wp-content/uploads/2021/11/The-Cozy-Cook.jpg";
@@ -5,10 +7,10 @@ const RecipeAuthor = () => {
 
    return (
       <div>
-         <img src={authorPhoto} alt = "Stephanie Melchione pictured" style={{objectFit: "contain", borderRadius: "50%"}} />
+         <img src={authorPhoto} alt = "Stephanie Melchione pictured" style={{objectFit: "contain", borderRadius: "50%", height: "275px", width: "275px"}} />
          <div>
             <h3>{authorName}</h3>
-            <a href={authorLink}></a> 
+            <a href={authorLink}>Link</a> 
          </div>
       </div>
    );
@@ -50,8 +52,9 @@ const RecipeDescription = () => {
 }
 
 const RecipePhoto = () => {
+   
    return (
-      <img src="https://thecozycook.com/wp-content/uploads/2021/10/Stovetop-Mac-and-Cheese-2.jpg" alt="mac and cheese on stovetop example" className="imageUpdates"/>
+      <img src="https://thecozycook.com/wp-content/uploads/2021/10/Stovetop-Mac-and-Cheese-2.jpg" alt="mac and cheese on stovetop example" className="imageUpdates" style={styleImg}/>
    );
 }
 
